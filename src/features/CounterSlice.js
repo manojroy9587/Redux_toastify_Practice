@@ -15,6 +15,7 @@ export const counterSlice = createSlice({
     increment: (state) => {
       state.count += 1;
       toast.success(`🎉 Add 1 ,Count is now ${state.count}`, {
+        style: { backgroundColor: "royalblue", color: "white" },
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -30,6 +31,7 @@ export const counterSlice = createSlice({
       state.count -= 1;
       
       toast.success(`🎉 Subscract 1 ,Count is now ${state.count}`, {
+        style: { backgroundColor: "orange", color: "white" },
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
